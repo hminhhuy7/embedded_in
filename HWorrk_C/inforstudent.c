@@ -92,11 +92,17 @@ int main(int argc, char const *argv[])
                              {.ten = "Cong",.mssv = "105",.grade.number = 8.0,.type = NUM },};
     uint8_t n = sizeof(student)/sizeof(student[0]);
     sortStudent(student, n, comparebyGrade);
-    printStudents(student, n);
-   
-   
-    
+    printStudents(student, n); 
     return 0;
 }
 
 
+if ( type == 0 ){
+        typei = THEO_TEN;
+    }
+    else if (  type == 1 ){
+        typei = THEO_MSSV;
+    }
+    else if ( type == 2 ){
+        typei = THEO_DIEM_TRUNG_BINH;
+    } else cout << "Khong thoa man !!" << endl; 
